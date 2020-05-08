@@ -73,5 +73,7 @@ input {
     }
     #main_div { padding-bottom: var(--dist-xs); }
     #sending-and-response_div {  padding-top: var(--dist-xs);  }
-
+    .buttons_items:hover, .form_items:hover, .buttons_items:active, .form_items:active {
+        color: white;
+    }
 }
