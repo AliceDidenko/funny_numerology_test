@@ -83,8 +83,7 @@ input {
     }
     #answer_div { padding-bottom: var(--dist-xs-sm); }
 
-    .buttons_items:hover, .form_items:hover, .buttons_items:active, .form_items:active {
-        color: white;
+    input, body, .buttons_items:hover, .form_items:hover, .buttons_items:active, .form_items:active {
+        color: rgb(196, 202, 255);
     }
-    input, body {color: rgb(196, 202, 255);}
 }

@@ -5,6 +5,7 @@ let month = 0;
 let year = 0;
 let maxnumber = 0;
 let now = new Date();
+let text = String(now);
 
 // фильтры для input с помощью регулярных выражений
 $(document).ready(function() {
@@ -91,7 +92,7 @@ function number_hrenamber (fn, d, m, y, maxn) { // вычисление номе
   answer = randomInteger(0, 4);
   return Number(arr[answer]);
 }
-// конец вычисление номера
+// конец вычисления номера
 
 $( function(){
 
@@ -104,9 +105,27 @@ $( function(){
     maxnumber = maxFunction();
 
     if (firstname && month && maxnumber) {
-      if (datecheck(day, month, year, now.getFullYear()), firstname.length<11) {
+      if (datecheck(day, month, year, now.getFullYear())) {
         document.getElementById("answer_user").innerHTML = "твой счастливый билет" + "<br>" + number_hrenamber(firstname, day, month, year, maxnumber);
-        //document.getElementById("answer_user").innerHTML += firstname;
+        // document.getElementById("answer_user").innerHTML += firstname;
+        // let data_obj = {};
+        // data_obj.firstname = firstname;
+        // data_obj.day = day;
+        // data_obj.month = month;
+        // data_obj.year = year;
+        // data_obj.maxnumber = maxnumber;
+        // let time_obj = {};
+        // time_obj.nowDay = now.getDate();
+        // time_obj.nowMonth = Number(now.getMonth())+1;
+        // time_obj.nowYear = now.getFullYear();
+        // time_obj.nowHours = now.getHours();
+        // time_obj.nowMinutes = now.getMinutes();
+
+        // let str_data_obj = JSON.stringify(data_obj);
+        // let str_time_obj = JSON.stringify(time_obj);
+        // console.log(str_data_obj);
+        // console.log(str_time_obj);
+
       } else {
         document.getElementById("answer_user").innerHTML = "врунишка-шалунишка," + "<br>" + "попробуй снова";
       }
