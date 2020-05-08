@@ -104,7 +104,7 @@ $( function(){
     maxnumber = maxFunction();
 
     if (firstname && month && maxnumber) {
-      if (datecheck(day, month, year, now.getFullYear())) {
+      if (datecheck(day, month, year, now.getFullYear()), firstname.length<11) {
         document.getElementById("answer_user").innerHTML = "твой счастливый билет" + "<br>" + number_hrenamber(firstname, day, month, year, maxnumber);
         //document.getElementById("answer_user").innerHTML += firstname;
       } else {
