@@ -4,8 +4,8 @@
     --text-color: rgb(126, 138, 243);;
     --bg-color: rgb(43, 27, 110);
     --grad-color: rgba(255, 255, 255, 0.3);
-    --dist-lg-md-sm: 10px;
-    --dist-xs: 5px;
+    --dist-lg-md: 10px;
+    --dist-xs-sm: 5px;
 }
 
 body {
@@ -45,34 +45,34 @@ input {
     cursor: pointer;
 }
 
-/**** large, medium and small deviced ****/
-@media (min-width: 768px) {
+/**** large and medium deviced ****/
+@media (min-width: 992px) {
     input, #salutation_title, p { font-size: 1.5em; font-weight: lighter; }
     #main_div, #sending-and-response_div { margin: 15px;}
-    #salutation_div, #answer_div { padding: var(--dist-lg-md-sm); }
+    #salutation_div, #answer_div { padding: var(--dist-lg-md); }
     input {
-        padding-left: var(--dist-lg-md-sm);
-        padding-right: var(--dist-lg-md-sm);
+        padding-left: var(--dist-lg-md);
+        padding-right: var(--dist-lg-md);
         padding-top: 0;
         padding-bottom: 0;
     }
-    #main_div { padding-bottom: var(--dist-lg-md-sm); }
-    #sending-and-response_div {  padding-top: var(--dist-lg-md-sm);  }
+    #main_div { padding-bottom: var(--dist-lg-md); }
+    #sending-and-response_div {  padding-top: var(--dist-lg-md);  }
 }
 
-/**** extra small deviced only ****/
-@media (max-width: 767px) {
+/**** extra small and small deviced ****/
+@media (max-width: 991px) {
     input, #salutation_title, p { font-size: 1.2em; font-weight: lighter;}
     #main_div, #sending-and-response_div { margin: 15px;}
-    #salutation_div, #answer_div { padding: var(--dist-xs); }
+    #salutation_div, #answer_div { padding: var(--dist-xs-sm); }
     input {
-        padding-left: var(--dist-xs);
-        padding-right: var(--dist-xs);
+        padding-left: var(--dist-xs-sm);
+        padding-right: var(--dist-xs-sm);
         padding-top: 0;
         padding-bottom: 0;
     }
-    #main_div { padding-bottom: var(--dist-xs); }
-    #sending-and-response_div {  padding-top: var(--dist-xs);  }
+    #main_div { padding-bottom: var(--dist-xs-sm); }
+    #sending-and-response_div {  padding-top: var(--dist-xs-sm);  }
     .buttons_items:hover, .form_items:hover, .buttons_items:active, .form_items:active {
         color: white;
     }
