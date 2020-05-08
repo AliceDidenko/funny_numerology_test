@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>твой билет</title>
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta charset='utf-8'>
+        <link href="ticket.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id="mane_form">
+            <div id="main_div">
+                <div id="salutation_div">
+                    <h2 id="salutation_title" class="text-center">ДОБРО ПОЖАЛОВАТЬ,<br>
+                        ЗАГАДОЧНЫЙ СТРАННИК!
+                    </h2>
+                </div>
+                <div id="form_div">
+                    <input type="text" name="firstname_name-input" id="firstname_input" class="form_items" placeholder="ваше имя"      minlength="2" maxlength="10" required="required">
+                    <input type="text" name="data_name-input"      id="data_input"      class="form_items" placeholder="ддммгггг"      minlength="8" maxlength="8"  required="required">
+                    <input type="text" name="maxnumber_name-input" id="maxnumber_input" class="form_items" placeholder="всего билетов" minlength="1" maxlength="3"  required="required">
+                </div>
+            </div>
+            <div id="sending-and-response_div">
+                <div id="buttons_div">
+                    <input type="reset"  name="reset_name-input"  id="reset_input"  value="сброс"        class="buttons_items text-center">
+                    <input type="button" name="button_name-input" id="button_input" value="халява приди" class="buttons_items text-center">
+                </div>
+                <div id="answer_div">
+                    <p id="answer_user" class="text-center"></p>
+                </div>
+            </div>
+        </form>
+
+        <script src="jquery-3.5.0.min.js"></script>
+        <script src="ticket.js"></script>
+    </body>
+</html>

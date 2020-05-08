@@ -1,0 +1,77 @@
+/**** base code ****/
+*{ box-sizing: border-box;}
+:root {
+    --text-color: rgb(126, 138, 243);;
+    --bg-color: rgb(43, 27, 110);
+    --grad-color: rgba(255, 255, 255, 0.3);
+    --dist-lg-md-sm: 10px;
+    --dist-xs: 5px;
+}
+
+body {
+    background-color: rgb(10, 1, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 10px;
+} 
+
+#mane_form { background-color: rgb(25, 11, 82); }
+#main_div, #sending-and-response_div, input { background-color: rgb(43, 27, 110); }
+.text-center { text-align: center;}
+#salutation_title, p { margin: 0;}
+#answer_div { display: none;}
+#answer_user { color: rgb(255, 255, 121);}
+input {
+    color: var(--text-color);
+    border: none;
+    outline:none;
+}
+
+#form_div, #buttons_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_items:hover {
+    background: var(--bg-color);
+    background: linear-gradient(90deg, var(--grad-color), var(--bg-color)); 
+}
+.buttons_items:hover {
+    background: var(--bg-color);
+    background: linear-gradient(90deg, var(--bg-color), var(--grad-color), var(--bg-color)); 
+    cursor: pointer;
+}
+
+/**** large, medium and small deviced ****/
+@media (min-width: 768px) {
+    input, #salutation_title, p { font-size: 1.5em; font-weight: lighter; }
+    #main_div, #sending-and-response_div { margin: 15px;}
+    #salutation_div, #answer_div { padding: var(--dist-lg-md-sm); }
+    input {
+        padding-left: var(--dist-lg-md-sm);
+        padding-right: var(--dist-lg-md-sm);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #main_div { padding-bottom: var(--dist-lg-md-sm); }
+    #sending-and-response_div {  padding-top: var(--dist-lg-md-sm);  }
+}
+
+/**** extra small deviced only ****/
+@media (max-width: 767px) {
+    input, #salutation_title, p { font-size: 1.2em; font-weight: lighter;}
+    #main_div, #sending-and-response_div { margin: 15px;}
+    #salutation_div, #answer_div { padding: var(--dist-xs); }
+    input {
+        padding-left: var(--dist-xs);
+        padding-right: var(--dist-xs);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #main_div { padding-bottom: var(--dist-xs); }
+    #sending-and-response_div {  padding-top: var(--dist-xs);  }
+
+}
