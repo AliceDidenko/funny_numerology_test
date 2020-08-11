@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <form id="mane_form">
+        <form id="mane_form" action="mail.php" method="POST">
             <div id="main_div">
                 <div id="salutation_div">
                     <h2 id="salutation_title" class="text-center">ДОБРО ПОЖАЛОВАТЬ,<br>
@@ -25,6 +25,7 @@
                 <div id="buttons_div">
                     <input type="reset"  name="reset_name-input"  id="reset_input"  value="сброс"        class="buttons_items text-center">
                     <input type="button" name="button_name-input" id="button_input" value="халява приди" class="buttons_items text-center">
+                    <input type="submit" name="submit"            id="button_input" value="отправить" class="buttons_items text-center">
                 </div>
                 <div id="answer_div">
                     <p id="answer_user" class="text-center"></p>
